@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Админка</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container _container">
+		<button type="button" class="header__menu-btn icon-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="header__logo">
+			<div class="logo">Логотип</div>
+		</div>
+		
+		<div class="header__profile profile">
+			<div class="profile__body">
+				<div class="profile__name">Name Name</div>
+				<div class="profile__label">Личный кабинет</div>
+			</div>
+			<a href="account.html" class="profile__avatar _ibg">
+				<img src="./images/profile-icon.svg" alt="">
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="menu-sidebar">
+		<div class="menu-sidebar__bg"></div>
+		<div class="menu-sidebar__content">
+			<button class="menu-sidebar__close">&#10006</button>
+			<ul class="menu-sidebar__list">
+				<li class="menu-sidebar__item"><a href="/">Главная</a></li>
+				<li class="menu-sidebar__item"><a href="#">Персонажи</a></li>
+				<li class="menu-sidebar__item"><a href="#">Предметы</a></li>
+				<li class="menu-sidebar__item"><a href="account.html">Кабинет</a></li>
+			</ul>
+			<button data-popup-id="login-popup" class="btn btn_dark menu-sidebar__btn _inactive">Войти</button>
+			<button data-popup-id="reg-popup" class="btn menu-sidebar__btn _inactive">Регистрация</button>
+		</div>
+	</div>
+</header>
+		<section class="admin">
+			<div class="admin__container _container">
+				<div class="admin__block" id="addSubject">
+					<div class="admin__text">Добавить предмет</div>
+					<div class="admin__dropdown">
+						<label>Класс</label>
+						<select name="class">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+						</select>
+					</div>
+					<input class="admin__input" type="text" placeholder="Название предмета" />
+					<button class="admin__btn">Добавить</button>
+				</div>
+
+				<div class="admin__block" id="addChapter">
+					<div class="admin__text">Добавить раздел</div>
+					<input name="name-subject" class="admin__input" type="text" placeholder="Название предмета" />
+					<input name="name-chapter" class="admin__input" type="text" placeholder="Название раздела" />
+					<textarea name="descr" class="admin__textbox" type="text" placeholder="Описание"></textarea>
+					<div class="admin__wrapper">
+						<div class="admin__dropdown">
+							<label>Класс</label>
+							<select name="class">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+							</select>
+						</div>
+						<div name="access" class="admin__checkbox">
+							<label>Доступен</label>
+							<input type="checkbox">
+						</div>
+					</div>
+					<button class="admin__btn">Добавить</button>
+				</div>
+
+
+				<div class="admin__block" id="addTestPack">
+					<div class="admin__text">Добавить тестирование</div>
+					<input name="subject-name" class="admin__input" type="text" placeholder="Название предмета" />
+					<input name="chapter-name" class="admin__input" type="text" placeholder="Название раздела" />
+					<div class="admin__wrapper">
+						<div class="admin__dropdown">
+							<label>Класс</label>
+							<select name="class">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+							</select>
+						</div>
+						<div class="admin__checkbox">
+							<label>Продвинутый</label>
+							<input type="checkbox">
+						</div>
+					</div>
+					<button class="admin__btn">Добавить</button>
+				</div>
+
+
+				<div class="admin__block" id="addTestTask">
+					<div class="admin__text">Добавить тестирование</div>
+					<input name="subject-name" class="admin__input" type="text" placeholder="Название предмета" />
+					<input name="chapter-name" class="admin__input" type="text" placeholder="Название раздела" />
+					<textarea name="question" class="admin__textbox" type="text" placeholder="Вопрос"></textarea>
+					<div class="admin__text">Варианты ответа</div>
+					<div class="admin__radio">
+						<input type="radio" name="answer">
+						<input name="answer-input" class="admin__input" type="text" />
+					</div>
+					<div class="admin__radio">
+						<input type="radio" name="answer">
+						<input name="answer-input" class="admin__input" type="text" />
+					</div>
+					<div class="admin__radio-add">добавить вариант</div>
+					<div class="admin__wrapper">
+						<div class="admin__dropdown">
+							<label>Класс</label>
+							<select name="class">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+							</select>
+						</div>
+						<div class="admin__checkbox">
+							<label>Продвинутый</label>
+							<input type="checkbox">
+						</div>
+					</div>
+					<button class="admin__btn">Добавить</button>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="js/index.min.js"></script>
+</body>
+
+</html>

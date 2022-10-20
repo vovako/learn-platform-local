@@ -1,0 +1,16 @@
+{
+  "name": "learn_platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "serve": "gulp"
+  },
+  "author": "Vladimir Kondaurov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2"
+  }
+}

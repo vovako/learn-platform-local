@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Раздел</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container _container">
+		<button type="button" class="header__menu-btn icon-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="header__logo">
+			<div class="logo">Логотип</div>
+		</div>
+		
+		<div class="header__profile profile">
+			<div class="profile__body">
+				<div class="profile__name">Name Name</div>
+				<div class="profile__label">Личный кабинет</div>
+			</div>
+			<a href="account.html" class="profile__avatar _ibg">
+				<img src="./images/profile-icon.svg" alt="">
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="menu-sidebar">
+		<div class="menu-sidebar__bg"></div>
+		<div class="menu-sidebar__content">
+			<button class="menu-sidebar__close">&#10006</button>
+			<ul class="menu-sidebar__list">
+				<li class="menu-sidebar__item"><a href="/">Главная</a></li>
+				<li class="menu-sidebar__item"><a href="#">Персонажи</a></li>
+				<li class="menu-sidebar__item"><a href="#">Предметы</a></li>
+				<li class="menu-sidebar__item"><a href="account.html">Кабинет</a></li>
+			</ul>
+			<button data-popup-id="login-popup" class="btn btn_dark menu-sidebar__btn _inactive">Войти</button>
+			<button data-popup-id="reg-popup" class="btn menu-sidebar__btn _inactive">Регистрация</button>
+		</div>
+	</div>
+</header>
+		<main>
+			<section class="chapter">
+				<div class="chapter__container _container">
+					<div class="chapter__title title title_dark">Здорово! <span class="title"></span></div>
+					<div class="chapter__subtitle subtitle subtitle_dark">Выбери любое из предложенных действий</div>
+					<div class="chapter__choices">
+						<div class="chapter__choice choice" id="theory">
+							<div class="choice__image">
+								<svg viewBox="0 0 156 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<style>
+										.s{
+											stroke: #BD7BF5;
+										}
+									</style>
+									<path class="s" d="M78.4086 34.8056V136.534M78.4086 34.8056C78.4086 34.8056 44.4992 5.74033 10.5897 29.9614V136.534C44.4992 112.313 78.4086 136.534 78.4086 136.534C78.4086 136.534 112.318 112.313 146.228 136.534V29.9614C112.318 5.74033 78.4086 34.8056 78.4086 34.8056Z" stroke-width="9.47312" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</div>
+							<div class="choice__title">Изучить теорию</div>
+							<div class="divider choice__divider"></div>
+							<div class="choice__subtitle">Освежи свои знания, если вдруг что-то подзабыл</div>
+						</div>
+							<div class="chapter__choice choice" id="practice">
+								<div class="choice__image">
+									<svg viewBox="0 0 135 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<style>
+											.f {
+												fill: #BD7BF5;
+											}
+										</style>
+										<path class="f"
+											d="M58.2758 62.7555L42.0047 46.4844L21.4658 67.0223L37.7366 83.2934L37.7261 83.3039L55.2955 100.873L58.2747 103.832L58.2852 103.842L75.8544 86.2726L78.8124 83.2934L131.889 30.2186L111.351 9.68066L58.2758 62.7555ZM69.9077 80.3249L66.9495 83.3039L58.2755 91.9776L58.265 91.9674L49.6015 83.3039L49.612 83.2934L33.3412 67.0223L42.0044 58.3591L58.2755 74.6299L111.351 21.5551L120.014 30.2186L69.9077 80.3249Z" />
+										<path class="f"
+											d="M117.555 122.675H12.5969V17.7169H91.373L99.7696 9.32031H4.20026V131.071H125.951V47.9172L117.555 56.3139V122.675Z" />
+									</svg>
+								</div>
+								<div class="choice__title">Приступить к заданиям</div>
+								<div class="divider choice__divider"></div>
+								<div class="choice__subtitle">Начинай выполнять задания, если ты уверен в своих знаниях</div>
+							</div>
+						</div>
+					</div>
+					<a href="/chapters.html" class="chapter__back">Выбрать другой раздел</a>
+				</div>
+			</section>
+		</main>
+
+		<form class="popup" id="reg-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content">
+		<div class="popup__title">Регистрация</div>
+		<input class="popup__input" name="firstName" type="text" placeholder="Имя">
+		<input class="popup__input" name="lastName" type="text" placeholder="Фамилия">
+		<input class="popup__input" name="levelStuding" type="text" placeholder="Класс">
+		<input class="popup__input" name="email" type="email" placeholder="Email">
+		<input class="popup__input" name="pas" type="password" autocomplete="on" placeholder="Пароль">
+		<input class="popup__input" name="pasRep" type="password" autocomplete="on" placeholder="Повторите пароль">
+		<button data-popup-id="login-popup" class="btn popup__btn" type="submit">Зарегистрироваться</button>
+
+		<button type="button" class="popup__close">&#10006</button>
+	</div>
+</form>
+
+<form class="popup" id="login-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content">
+		<div class="popup__title">Вход</div>
+		<input class="popup__input" name="email" type="email" placeholder="Email">
+		<input class="popup__input" name="pas" type="password" autocomplete="on" placeholder="Пароль">
+		<button class="btn popup__btn" type="submit">Войти</button>
+		<div data-popup-id="reg-popup" id="no-account-btn" class="popup__link">Нет аккаунта?</div>
+
+		<button type="button" class="popup__close">&#10006</button>
+	</div>
+</form>
+
+<div class="popup" id="appeals-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content appeals">
+		<div class="popup__title popup__title_color">Мои обращения</div>
+		<div class="appeals__item">
+			<div class="appeals__info">
+				<div class="appeals__title">Ошибка в ответе</div>
+				<div class="appeals__datetime">02:15 15.07.22</div>
+			</div>
+			<div class="appeals__text">Здравствуйте! В 5 задании в разделе “Механика” нет правильного ответа.....</div>
+			<div class="appeals__options option">
+				<span></span>
+				<span></span>
+				<span></span>
+				<div class="account__dialog dialog">
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-select.svg" alt=""></div>
+						<div class="dialog__text">Выделить</div>
+					</div>
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-archive.svg" alt=""></div>
+						<div class="dialog__text">В архив</div>
+					</div>
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-basket.svg" alt=""></div>
+						<div class="dialog__text">Удалить</div>
+					</div>
+				</div>
+			</div>
+			<div class="appeals__label mark"></div>
+		</div>
+		<div class="appeals__item">
+			<div class="appeals__info">
+				<div class="appeals__title">Технические неполадки</div>
+				<div class="appeals__datetime">02:15 15.07.22</div>
+			</div>
+			<div class="appeals__text">Здравствуйте! В 5 задании в разделе “Механика” нет правильного ответа.....</div>
+			<div class="appeals__options option">
+				<span></span>
+				<span></span>
+				<span></span>
+				<div class="account__dialog dialog">
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-select.svg" alt=""></div>
+						<div class="dialog__text">Выделить</div>
+					</div>
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-archive.svg" alt=""></div>
+						<div class="dialog__text">В архив</div>
+					</div>
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-basket.svg" alt=""></div>
+						<div class="dialog__text">Удалить</div>
+					</div>
+				</div>
+			</div>
+			<div class="appeals__label clock"></div>
+		</div>
+		<button type="button" class="popup__close popup__close_right">&#10006</button>
+	</div>
+</div>
+
+<form class="popup" id="formError-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content formError">
+		<div class="formError__title">
+			<span>Пожалуйста, опиши свою проблему</span>
+			<button type="button" class="popup__close">&#10006</button>
+		</div>
+		<div class="formError__tips">
+			<div class="formError__tip">Технические неполадки</div>
+			<div class="formError__tip">Опечатки</div>
+			<div class="formError__tip">Ошибка в задаче</div>
+			<div class="formError__tip">Ошибка в ответе</div>
+		</div>
+		<div class="formError__Box">
+			<textarea class="formError__TextBox" name="messageError" placeholder="Введите текст обращения..."></textarea>
+			<img class="formError__send-btn" src="../images/send.svg">
+		</div>
+	</div>
+</form>
+
+<div class="popup" id="formInvite-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content formInvite">
+		<div class="formInvite__SendAgree">
+			<img src="../images/иконка.svg">
+			<div class="formInvite__Message">Твое обращение принято и находится на рассмотрении</div>
+		</div>
+		<div class="formInvite__Prochee">
+			Ты можушь узнать о его статусе в личном кабинете в разделе "Мои обращения"
+		</div>
+		<button class="btn formInvite__button">Спасибо</button>
+	</div>
+</div>
+
+<div class="popup" id="results-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content results">
+		<div class="results__block">
+			<div class="popup__title popup__title_color">Задачи</div>
+			<div class="results__item">
+				<div class="results__num">1</div>
+				<div class="results__text">Закон сохранения импульса</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">2</div>
+				<div class="results__text">Равномерное движение</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">3</div>
+				<div class="results__text">Правило Буравчика</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">4</div>
+				<div class="results__text">Первый закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">5</div>
+				<div class="results__text">Второй закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">6</div>
+				<div class="results__text">Третий закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">7</div>
+				<div class="results__text">Правило левой руки</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">8</div>
+				<div class="results__text">Правило правой руки</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">9</div>
+				<div class="results__text">Понятие материальной точки</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">10</div>
+				<div class="results__text">Расчет скорости</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+
+			<div class="results__item results__item_showAddit">
+				<div class="results__text">Показать дополнительные задачи</div>
+				<div class="results__icon results__icon_showAddit">
+					<img src="./images/bottom-arrow.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="results__block">
+			<div class="popup__title popup__title_color">Тестирование</div>
+			<div class="results__item">
+				<div class="results__num">1</div>
+				<div class="results__text">Закон сохранения импульса</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">2</div>
+				<div class="results__text">Равномерное движение</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">3</div>
+				<div class="results__text">Правило Буравчика</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">4</div>
+				<div class="results__text">Первый закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">5</div>
+				<div class="results__text">Второй закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">6</div>
+				<div class="results__text">Третий закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">7</div>
+				<div class="results__text">Правило левой руки</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">8</div>
+				<div class="results__text">Правило правой руки</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">9</div>
+				<div class="results__text">Понятие материальной точки</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">10</div>
+				<div class="results__text">Расчет скорости</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+		</div>
+		
+		<button type="button" class="popup__close popup__close_right">&#10006</button>
+	</div>
+</div>
+	</div>
+	<script src="js/index.min.js"></script>
+</body>
+
+</html>

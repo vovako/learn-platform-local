@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Главная</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+	<div class="header__container _container">
+		<button type="button" class="header__menu-btn icon-menu">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+
+		<div class="header__logo">
+			<div class="logo">Логотип</div>
+		</div>
+		
+		<div class="header__profile profile">
+			<div class="profile__body">
+				<div class="profile__name">Name Name</div>
+				<div class="profile__label">Личный кабинет</div>
+			</div>
+			<a href="account.html" class="profile__avatar _ibg">
+				<img src="./images/profile-icon.svg" alt="">
+			</a>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="menu-sidebar">
+		<div class="menu-sidebar__bg"></div>
+		<div class="menu-sidebar__content">
+			<button class="menu-sidebar__close">&#10006</button>
+			<ul class="menu-sidebar__list">
+				<li class="menu-sidebar__item"><a href="/">Главная</a></li>
+				<li class="menu-sidebar__item"><a href="#">Персонажи</a></li>
+				<li class="menu-sidebar__item"><a href="#">Предметы</a></li>
+				<li class="menu-sidebar__item"><a href="account.html">Кабинет</a></li>
+			</ul>
+			<button data-popup-id="login-popup" class="btn btn_dark menu-sidebar__btn _inactive">Войти</button>
+			<button data-popup-id="reg-popup" class="btn menu-sidebar__btn _inactive">Регистрация</button>
+		</div>
+	</div>
+</header>
+		<main>
+			<section class="promo">
+				<div class="promo__container _container">
+					<div class="promo__title">Играй и обучайся одновременно!</div>
+					<div class="promo__subtitle">Для школьников всех возрастов</div>
+					<button data-popup-id="login-popup" class="promo__btn btn">Начать</button>
+				</div>
+			</section>
+
+			<section id="about" class="about">
+				<div class="about__container _container">
+					<div class="about__title title">О нас</div>
+					<div class="about__items">
+						<div class="about-item">
+							<div class="about-item__image">
+								<div class="temp-image"></div>
+							</div>
+							<div class="about-item__title">Обучение в игровой форме</div>
+							<div class="about-item__divider"></div>
+							<div class="about-item__subtitle">Совмещай полезное с приятным</div>
+						</div>
+						<div class="about-item">
+							<div class="about-item__image">
+								<div class="temp-image"></div>
+							</div>
+							<div class="about-item__title">Большой банк заданий</div>
+							<div class="about-item__divider"></div>
+							<div class="about-item__subtitle">Узнавай что-то новое с каждым разом</div>
+						</div>
+						<div class="about-item">
+							<div class="about-item__image">
+								<div class="temp-image"></div>
+							</div>
+							<div class="about-item__title">Достижения за лучший результат</div>
+							<div class="about-item__divider"></div>
+							<div class="about-item__subtitle">Получай достижения и соревнуйся с другими учениками</div>
+						</div>
+					</div>
+					<button class="about__btn btn">Узнать больше</button>
+				</div>
+			</section>
+
+			<section class="subjects">
+				<div class="subjects__container _container">
+					<div class="wrapper subjects__wrapper">
+						<div class="subjects__title title">Выбор предмета и темы</div>
+						<div class="subjects__divider divider"></div>
+						<div class="subjects__subtitle subtitle">Проходи задания по любой выбранной теме</div>
+					</div>
+					<div class="subjects__subjects">
+						<div class="subjects__row">
+							<div class="subjects__col"><div class="subjects__subject" style="background: #75F491;">Русский язык</div></div>
+							<div class="subjects__col"><div class="subjects__subject" style="background: #F98F62;">Английский</div></div>
+							<div class="subjects__col"></div>
+						</div>
+						<div class="subjects__row">
+							<div class="subjects__col"><div class="subjects__subject" style="background: #4F79E4;">Алгебра</div></div>
+							<div class="subjects__col"><div class="subjects__subject" style="background: #85D0FA;">Геометрия</div></div>
+							<div class="subjects__col"><div class="subjects__subject" style="background: #B98FEE;">Физика</div></div>
+						</div>
+						<div class="subjects__row">
+							<div class="subjects__col"><div class="subjects__subject" style="background: #FF537C;">Литература</div></div>
+							<div class="subjects__col"><div class="subjects__subject" style="background: #68EAD2;">Биология</div></div>
+							<div class="subjects__col"><div class="subjects__subject" style="background: #EF78F1;">История</div></div>
+						</div>
+					</div>
+					<div class="subjects__curve"></div>
+				</div>
+			</section>
+
+			<section id="helpers" class="helpers">
+				<div class="helpers__container _container">
+					<div class="helpers__body">
+						<div class="wrapper helpers__wrapper">
+							<div class="helpers__title title title_light">Твои помощники в учебе</div>
+							<div class="helpers__divider divider divider_light"></div>
+							<div class="helpers__subtitle subtitle subtitle_light">Оригинальный персонаж для каждого предмета, который будет направлять и помогать</div>
+							<button class="btn helpers__btn">Посмотреть</button>
+						</div>
+					</div>
+					<div class="helpers__image">
+						<img src="./images/helpers.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section id="achievements" class="achievements">
+				<div class="_container achievements__container">
+					<div class="achievements__row">
+						<div class="achievements__col">
+							<div class="achievements__medals medals">
+								<div class="medals__col">
+									<div class="medals__item">
+										<img src="./images/medal01.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal02.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal03.svg" alt="">
+									</div>
+								</div>
+								<div class="medals__col">
+									<div class="medals__item">
+										<img src="./images/medal01.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal02.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal03.svg" alt="">
+									</div>
+								</div>
+								<div class="medals__col">
+									<div class="medals__item">
+										<img src="./images/medal01.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal02.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal03.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="achievements__col">
+							<div class="wrapper achievements__wrapper">
+								<div class="achievements__title title">Получай достижения</div>
+								<div class="achievements__divider divider"></div>
+								<div class="achievements__subtitle subtitle">Пройди задания быстро и правильно и получи достижение</div>
+							</div>
+						</div>
+						<div class="achievements__col">
+							<div class="achievements__medals medals">
+								<div class="medals__col">
+									<div class="medals__item">
+										<img src="./images/medal01.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal02.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal03.svg" alt="">
+									</div>
+								</div>
+								<div class="medals__col">
+									<div class="medals__item">
+										<img src="./images/medal01.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal02.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal03.svg" alt="">
+									</div>
+								</div>
+								<div class="medals__col">
+									<div class="medals__item">
+										<img src="./images/medal01.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal02.svg" alt="">
+									</div>
+									<div class="medals__item">
+										<img src="./images/medal03.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container _container">
+				<div class="footer__row">
+					<div class="footer__col">
+						<div class="footer__logo"></div>
+						<div class="logo">Логотип</div>
+						<div class="footer__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. A incidunt dolore numquam debitis saepe culpa dolor sunt laboriosam temporibus adipisci.</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Меню</div>
+						<ul class="footer__menu">
+							<li class="footer__menu-item">
+								<a href="#about">О нас</a>
+							</li>
+							<li class="footer__menu-item">
+								<a href="#helpers">Персонажи</a>
+							</li>
+							<li class="footer__menu-item">
+								<a href="#achievements">Достижения</a>
+							</li>
+							<li class="footer__menu-item">
+								<a href="#">Рейтинг</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Контакты</div>
+						<div class="footer__contacts">
+							<div class="footer__contacts-item">aaaaa@gmail.com</div>
+							<div class="footer__contacts-item">+79510389065</div>
+						</div>
+					</div>
+					<div class="footer__col">
+						<div class="footer__title">Ссылки</div>
+						<div class="footer__social">
+							<a href="#" class="footer__social-item">
+								<img src="./images/vk.svg" alt="">
+							</a>
+							<a href="#" class="footer__social-item">
+								<img src="./images/telegram.svg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer-arrow" class="footer__arrow">
+				<img src="./images/arrow-top.svg" alt="">
+			</div>
+		</footer>
+		<form class="popup" id="reg-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content">
+		<div class="popup__title">Регистрация</div>
+		<input class="popup__input" name="firstName" type="text" placeholder="Имя">
+		<input class="popup__input" name="lastName" type="text" placeholder="Фамилия">
+		<input class="popup__input" name="levelStuding" type="text" placeholder="Класс">
+		<input class="popup__input" name="email" type="email" placeholder="Email">
+		<input class="popup__input" name="pas" type="password" autocomplete="on" placeholder="Пароль">
+		<input class="popup__input" name="pasRep" type="password" autocomplete="on" placeholder="Повторите пароль">
+		<button data-popup-id="login-popup" class="btn popup__btn" type="submit">Зарегистрироваться</button>
+
+		<button type="button" class="popup__close">&#10006</button>
+	</div>
+</form>
+
+<form class="popup" id="login-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content">
+		<div class="popup__title">Вход</div>
+		<input class="popup__input" name="email" type="email" placeholder="Email">
+		<input class="popup__input" name="pas" type="password" autocomplete="on" placeholder="Пароль">
+		<button class="btn popup__btn" type="submit">Войти</button>
+		<div data-popup-id="reg-popup" id="no-account-btn" class="popup__link">Нет аккаунта?</div>
+
+		<button type="button" class="popup__close">&#10006</button>
+	</div>
+</form>
+
+<div class="popup" id="appeals-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content appeals">
+		<div class="popup__title popup__title_color">Мои обращения</div>
+		<div class="appeals__item">
+			<div class="appeals__info">
+				<div class="appeals__title">Ошибка в ответе</div>
+				<div class="appeals__datetime">02:15 15.07.22</div>
+			</div>
+			<div class="appeals__text">Здравствуйте! В 5 задании в разделе “Механика” нет правильного ответа.....</div>
+			<div class="appeals__options option">
+				<span></span>
+				<span></span>
+				<span></span>
+				<div class="account__dialog dialog">
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-select.svg" alt=""></div>
+						<div class="dialog__text">Выделить</div>
+					</div>
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-archive.svg" alt=""></div>
+						<div class="dialog__text">В архив</div>
+					</div>
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-basket.svg" alt=""></div>
+						<div class="dialog__text">Удалить</div>
+					</div>
+				</div>
+			</div>
+			<div class="appeals__label mark"></div>
+		</div>
+		<div class="appeals__item">
+			<div class="appeals__info">
+				<div class="appeals__title">Технические неполадки</div>
+				<div class="appeals__datetime">02:15 15.07.22</div>
+			</div>
+			<div class="appeals__text">Здравствуйте! В 5 задании в разделе “Механика” нет правильного ответа.....</div>
+			<div class="appeals__options option">
+				<span></span>
+				<span></span>
+				<span></span>
+				<div class="account__dialog dialog">
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-select.svg" alt=""></div>
+						<div class="dialog__text">Выделить</div>
+					</div>
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-archive.svg" alt=""></div>
+						<div class="dialog__text">В архив</div>
+					</div>
+					<div class="dialog__action">
+						<div class="dialog__image"><img src="./images/dialog-basket.svg" alt=""></div>
+						<div class="dialog__text">Удалить</div>
+					</div>
+				</div>
+			</div>
+			<div class="appeals__label clock"></div>
+		</div>
+		<button type="button" class="popup__close popup__close_right">&#10006</button>
+	</div>
+</div>
+
+<form class="popup" id="formError-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content formError">
+		<div class="formError__title">
+			<span>Пожалуйста, опиши свою проблему</span>
+			<button type="button" class="popup__close">&#10006</button>
+		</div>
+		<div class="formError__tips">
+			<div class="formError__tip">Технические неполадки</div>
+			<div class="formError__tip">Опечатки</div>
+			<div class="formError__tip">Ошибка в задаче</div>
+			<div class="formError__tip">Ошибка в ответе</div>
+		</div>
+		<div class="formError__Box">
+			<textarea class="formError__TextBox" name="messageError" placeholder="Введите текст обращения..."></textarea>
+			<img class="formError__send-btn" src="../images/send.svg">
+		</div>
+	</div>
+</form>
+
+<div class="popup" id="formInvite-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content formInvite">
+		<div class="formInvite__SendAgree">
+			<img src="../images/иконка.svg">
+			<div class="formInvite__Message">Твое обращение принято и находится на рассмотрении</div>
+		</div>
+		<div class="formInvite__Prochee">
+			Ты можушь узнать о его статусе в личном кабинете в разделе "Мои обращения"
+		</div>
+		<button class="btn formInvite__button">Спасибо</button>
+	</div>
+</div>
+
+<div class="popup" id="results-popup">
+	<div class="popup__bg"></div>
+	<div class="popup__content results">
+		<div class="results__block">
+			<div class="popup__title popup__title_color">Задачи</div>
+			<div class="results__item">
+				<div class="results__num">1</div>
+				<div class="results__text">Закон сохранения импульса</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">2</div>
+				<div class="results__text">Равномерное движение</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">3</div>
+				<div class="results__text">Правило Буравчика</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">4</div>
+				<div class="results__text">Первый закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">5</div>
+				<div class="results__text">Второй закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">6</div>
+				<div class="results__text">Третий закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">7</div>
+				<div class="results__text">Правило левой руки</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">8</div>
+				<div class="results__text">Правило правой руки</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">9</div>
+				<div class="results__text">Понятие материальной точки</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">10</div>
+				<div class="results__text">Расчет скорости</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+
+			<div class="results__item results__item_showAddit">
+				<div class="results__text">Показать дополнительные задачи</div>
+				<div class="results__icon results__icon_showAddit">
+					<img src="./images/bottom-arrow.svg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="results__block">
+			<div class="popup__title popup__title_color">Тестирование</div>
+			<div class="results__item">
+				<div class="results__num">1</div>
+				<div class="results__text">Закон сохранения импульса</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">2</div>
+				<div class="results__text">Равномерное движение</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">3</div>
+				<div class="results__text">Правило Буравчика</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">4</div>
+				<div class="results__text">Первый закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">5</div>
+				<div class="results__text">Второй закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">6</div>
+				<div class="results__text">Третий закон Ньютона</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">7</div>
+				<div class="results__text">Правило левой руки</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">8</div>
+				<div class="results__text">Правило правой руки</div>
+				<div class="results__icon">
+					<img src="./images/failed-task.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">9</div>
+				<div class="results__text">Понятие материальной точки</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+			<div class="results__item">
+				<div class="results__num">10</div>
+				<div class="results__text">Расчет скорости</div>
+				<div class="results__icon">
+					<img src="./images/appeals-mark.svg" alt="">
+				</div>
+			</div>
+		</div>
+		
+		<button type="button" class="popup__close popup__close_right">&#10006</button>
+	</div>
+</div>
+	</div>
+	<script src="js/index.min.js"></script>
+</body>
+</html>
