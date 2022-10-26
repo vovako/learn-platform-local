@@ -1,1 +1,1 @@
-npm i && gulp
+npm i && npm run serve

@@ -370,12 +370,10 @@
 <form class="popup" id="formError-popup">
 	<div class="popup__bg"></div>
 	<div class="popup__content formError">
-		<div class="formError__title">
-			<span>Пожалуйста, опиши свою проблему</span>
-			<button type="button" class="popup__close">&#10006</button>
-		</div>
+		<button type="button" class="popup__close popup__close_right">&#10006</button>
+		<div class="popup__title formError__title">Выбери тип проблемы и опиши её</div>
 		<div class="formError__tips">
-			<div class="formError__tip">Технические неполадки</div>
+			<div class="formError__tip select">Техническая неполадка</div>
 			<div class="formError__tip">Опечатки</div>
 			<div class="formError__tip">Ошибка в задаче</div>
 			<div class="formError__tip">Ошибка в ответе</div>
@@ -559,6 +557,18 @@
 		</div>
 		
 		<button type="button" class="popup__close popup__close_right">&#10006</button>
+	</div>
+</div>
+
+<div class="popup" id="continue-test-popup" >
+	<div class="popup__bg nobtn"></div>
+
+	<div class="popup__content continue-test">
+		<div class="popup__title popup__title_small"></div>
+		<div>
+			<button class="btn repeat">Заново</button>
+			<button class="btn continue">Продолжить</button>
+		</div>
 	</div>
 </div>
 	</div>

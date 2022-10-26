@@ -61,6 +61,7 @@
 					<div class="account__grid">
 						<div class="account__picture">
 							<img src="/images/poster.jpg" alt="">
+							<button class="account__star-btn btn btn_dark">К звездам</button>
 						</div>
 						<div class="account__achievements grid-cell">
 							<div class="see-all__block">
@@ -130,9 +131,13 @@
 						</div>
 						<div class="account__user user grid-cell">
 							<div class="user__image"><img src="/images/profile-icon.svg" alt=""></div>
-							<div class="user__name">Name Name</div>
+							<div class="user__name"></div>
+							<input class="user__name user__name-new-name" type="text">
+							<input class="user__name user__name-new-surname" type="text">
 							<div class="user__role">Ученик</div>
-							<div class="user__class">10 класс</div>
+							<div class="user__class"></div>
+							<input class="user__class user__class-new" type="text">
+
 							<button class="user__edit">
 								<div class="user__edit-image"><img src="/images/edit.svg" alt=""></div>
 								<div class="user__edit-text">Редактировать</div>
@@ -140,7 +145,7 @@
 							<button data-popup-id="appeals-popup" class="user__notify-btn"><img src="images/notify.svg" alt=""></button>
 
 						</div>
-						<button class="account__star-btn btn btn_dark" >К звездам</button>
+						
 						<div class="account__subjects grid-cell">
 							<div class="account__subject">
 								<div class="account__subject__progress circle-progress">
@@ -423,12 +428,10 @@
 <form class="popup" id="formError-popup">
 	<div class="popup__bg"></div>
 	<div class="popup__content formError">
-		<div class="formError__title">
-			<span>Пожалуйста, опиши свою проблему</span>
-			<button type="button" class="popup__close">&#10006</button>
-		</div>
+		<button type="button" class="popup__close popup__close_right">&#10006</button>
+		<div class="popup__title formError__title">Выбери тип проблемы и опиши её</div>
 		<div class="formError__tips">
-			<div class="formError__tip">Технические неполадки</div>
+			<div class="formError__tip select">Техническая неполадка</div>
 			<div class="formError__tip">Опечатки</div>
 			<div class="formError__tip">Ошибка в задаче</div>
 			<div class="formError__tip">Ошибка в ответе</div>
@@ -612,6 +615,18 @@
 		</div>
 		
 		<button type="button" class="popup__close popup__close_right">&#10006</button>
+	</div>
+</div>
+
+<div class="popup" id="continue-test-popup" >
+	<div class="popup__bg nobtn"></div>
+
+	<div class="popup__content continue-test">
+		<div class="popup__title popup__title_small"></div>
+		<div>
+			<button class="btn repeat">Заново</button>
+			<button class="btn continue">Продолжить</button>
+		</div>
 	</div>
 </div>
 	</div>
