@@ -382,6 +382,13 @@ h6 {
   width: calc(550px + 120 * ((100vw - 1024px) / 896));
   height: calc(450px + 150 * ((100vw - 1024px) / 896));
 }
+.popup .appeals__box {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-right: 4px;
+  padding-bottom: 4px;
+}
 .popup .appeals__item {
   padding: 5px 40px 20px 15px;
   background-color: #F9F9F9;
@@ -843,7 +850,7 @@ input {
   position: absolute;
   top: 50%;
   right: 30px;
-  transform: translate(100%, -50%);
+  transform: translate(30px, -15px);
   background-color: #fff;
   border: solid 1px lightgray;
   z-index: 100;
